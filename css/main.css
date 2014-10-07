@@ -13,3 +13,57 @@ img {
 section {
 	padding: 10rem 0;
 }
+
+.sun {
+	width:300px;
+}
+
+.sun-section {
+    background: transparent url("../img/mars-pano.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.dipper {
+    width: 200px;
+    opacity: 0;
+}
+
+.js-dipper-fade {
+    -webkit-animation: dipper-fade 1s linear forwards;
+
+    /*animation fill-mode: forwards;
+     will tell the animation to stay at its end state after completion*/
+}
+
+@-webkit-keyframes dipper-fade {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.shuttle {
+    width: 200px;
+    opacity: 0;
+    transform: translateY(100px);
+}
+.shuttle-section {
+    background-color: #f6a500;
+}
+
+.js-shuttle-fade {
+    -webkit-animation: shuttle-fade 1s linear forwards;
+}
+
+@-webkit-keyframes shuttle-fade {
+    0%{
+            opacity: 0;
+            transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
